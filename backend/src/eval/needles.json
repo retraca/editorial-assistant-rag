@@ -1,0 +1,202 @@
+{
+  "note": "Synthetic passages planted into the corpus at controlled positions. Each states one invented fact that nothing else in either book can answer, so a correct answer proves the needle was retrieved. Prose is deliberately period-appropriate: a modern or oddly-phrased needle would be trivially separable in embedding space and the test would measure style detection rather than retrieval. Each needle carries TWO questions \u2014 'literal' shares wording with the needle (the easy classic-NIAH form) and 'latent' shares almost none, following NoLiMa, which is the form that actually tests associative retrieval rather than string matching.",
+  "needles": [
+    {
+      "id": "n1",
+      "book": "pride_prejudice",
+      "depth": "early",
+      "text": "Mrs. Trelawney of Ashcombe Cottage was known throughout the parish for the green enamelled snuff-box she had inherited from her grandmother, and which she carried with her upon every journey, however short. It was said she had refused eleven guineas for it from a gentleman in Bath.",
+      "literal": "What green enamelled object did Mrs. Trelawney inherit from her grandmother?",
+      "latent": "Which lady declined eleven guineas for an heirloom tobacco container?",
+      "answerLiteral": "snuff-box",
+      "answerLatent": "trelawney"
+    },
+    {
+      "id": "n2",
+      "book": "pride_prejudice",
+      "depth": "middle",
+      "text": "The apothecary at Fenwick, a Mr. Halloway, kept upon his shelf a jar of dried lavender which he declared to be forty years old, and would sell to nobody, saying that its virtue was in the keeping and not in the using.",
+      "literal": "How old did Mr. Halloway say his jar of dried lavender was?",
+      "latent": "Which tradesman refused to part with a purple flower he had stored for four decades?",
+      "answerLiteral": "forty",
+      "answerLatent": "halloway"
+    },
+    {
+      "id": "n3",
+      "book": "pride_prejudice",
+      "depth": "late",
+      "text": "At Marbury there stood an old sundial in the kitchen garden, upon which someone had long ago cut the words \"I count none but sunny hours,\" and the family made a custom of reading it aloud on the first fine morning of every spring.",
+      "literal": "What words were cut into the old sundial at Marbury?",
+      "latent": "What did the household recite each year when good weather first returned?",
+      "answerLiteral": "sunny hours",
+      "answerLatent": "sunny hours"
+    },
+    {
+      "id": "n4",
+      "book": "little_women",
+      "depth": "early",
+      "text": "Old Mr. Pettigrew who kept the toll-bridge owned a one-eyed grey cat named Admiral, and it was his habit to give the creature a saucer of cream every Sunday, whatever the weather and whatever his own circumstances.",
+      "literal": "What was the name of Mr. Pettigrew's one-eyed grey cat?",
+      "latent": "Which animal received dairy from the bridge-keeper at the week's end?",
+      "answerLiteral": "admiral",
+      "answerLatent": "admiral"
+    },
+    {
+      "id": "n5",
+      "book": "little_women",
+      "depth": "middle",
+      "text": "The schoolmistress at Bellhaven, Miss Ardley, had a rule that no child might leave the room until each had named one kindness done that day, and the smallest scholars often invented theirs, which she pretended not to notice.",
+      "literal": "What was Miss Ardley's rule before a child might leave the room?",
+      "latent": "What did the youngest pupils at that village school fabricate before being dismissed?",
+      "answerLiteral": "kindness",
+      "answerLatent": "kindness"
+    },
+    {
+      "id": "n6",
+      "book": "little_women",
+      "depth": "late",
+      "text": "In the parlour at Wrenfield there hung a sampler worked in faded blue thread by a child of nine, bearing the date 1817 and the single word \"Patience,\" which the family valued above every picture in the house.",
+      "literal": "What single word was worked into the sampler hanging at Wrenfield?",
+      "latent": "What virtue had a nine-year-old stitched in blue, dated 1817?",
+      "answerLiteral": "patience",
+      "answerLatent": "patience"
+    }
+  ],
+  "distractors": [
+    {
+      "id": "d1",
+      "of": "n1",
+      "book": "little_women",
+      "text": "Mrs. Ashwell of Trelawney Row owned a green enamelled thimble-case that had come to her from an aunt, and she was fond of showing it to visitors, though she had never been offered money for it."
+    },
+    {
+      "id": "d2",
+      "of": "n4",
+      "book": "pride_prejudice",
+      "text": "The gatekeeper at Petworth kept a black spaniel called Admiral, a noisy creature that was given scraps rather than cream, and never upon any settled day of the week."
+    }
+  ],
+  "note2": "The 'isolated' needles above scored 100% at rank 1 in both question forms, which means the test was measuring nothing. NoLiMa fixes LEXICAL overlap, but these needles were also SEMANTICALLY isolated: no real passage in either book concerns snuff-boxes or toll-bridge cats, so the needle had no competition and any phrasing found it. The 'camouflaged' set below fixes that second axis \u2014 each sits on a topic the corpus is dense in (balls, proposals, illness, letters, quarrels, great houses), so retrieval must discriminate on detail rather than topic.",
+  "camouflaged": [
+    {
+      "id": "c1",
+      "book": "pride_prejudice",
+      "depth": "early",
+      "text": "At the Fanshawe ball Miss Carteret refused three separate offers to dance from Mr. Aldridge, and was afterwards heard to say that she had done it only to vex her sister, who had thought him the handsomest man in the room.",
+      "literal": "How many offers to dance did Miss Carteret refuse from Mr. Aldridge?",
+      "latent": "At that assembly, why did the young lady keep turning down the same partner?",
+      "answerLiteral": "three",
+      "answerLatent": "vex"
+    },
+    {
+      "id": "c2",
+      "book": "pride_prejudice",
+      "depth": "middle",
+      "text": "Mr. Ollerton made his proposal in the shrubbery at Kelbridge, and being refused, observed that he had expected as much, and asked whether he might still be permitted to send her father a brace of pheasants at Michaelmas.",
+      "literal": "What did Mr. Ollerton ask to send after his proposal was refused?",
+      "latent": "After being turned down in the garden, what gift did the suitor still hope to give her family?",
+      "answerLiteral": "pheasant",
+      "answerLatent": "pheasant"
+    },
+    {
+      "id": "c3",
+      "book": "pride_prejudice",
+      "depth": "late",
+      "text": "The letter from Mrs. Danvers arrived on a Tuesday and was read three times before breakfast, for it contained the news that the entail upon Whitcombe had been broken at last, and that the youngest daughter would inherit after all.",
+      "literal": "What news did the letter from Mrs. Danvers contain about Whitcombe?",
+      "latent": "Which relative was unexpectedly to receive the property once the legal restriction ended?",
+      "answerLiteral": "youngest",
+      "answerLatent": "youngest"
+    },
+    {
+      "id": "c4",
+      "book": "little_women",
+      "depth": "early",
+      "text": "When the fever came to the Ambrose house it was the second sister who nursed the others, and she kept a little book in which she wrote down each night how many hours each of them had slept, believing it would help the doctor.",
+      "literal": "What did the second Ambrose sister write down each night during the fever?",
+      "latent": "During that illness, what record did the girl keep to assist the physician?",
+      "answerLiteral": "hours",
+      "answerLatent": "hours"
+    },
+    {
+      "id": "c5",
+      "book": "little_women",
+      "depth": "middle",
+      "text": "The quarrel between the two younger girls lasted four days, and was ended only when the elder found that her sister had quietly mended the torn glove she had been too proud to ask about.",
+      "literal": "How many days did the quarrel between the two younger girls last?",
+      "latent": "What small repaired item finally ended the falling-out between the sisters?",
+      "answerLiteral": "four",
+      "answerLatent": "glove"
+    },
+    {
+      "id": "c6",
+      "book": "little_women",
+      "depth": "late",
+      "text": "They were shown over the great house at Marchmont by the housekeeper, who told them that the library held nine thousand volumes and that the late master had read every one of them twice, which the girls did not believe.",
+      "literal": "How many volumes did the housekeeper say the Marchmont library held?",
+      "latent": "What claim about the collection did the young visitors privately doubt?",
+      "answerLiteral": "nine thousand",
+      "answerLatent": "nine thousand"
+    }
+  ],
+  "note3": "Answer keys are PER QUESTION FORM. The first version had one key per needle, but the two forms often ask about different facts: c5 literal asks how many days the quarrel lasted (four) while c5 latent asks what item ended it (glove). A single key marked correct answers as failures. Third instance in this project of a brittle eval check producing a false failure \u2014 the pattern is worth more than the fix.",
+  "note4": "Multi-needle pairs. Each pair splits ONE fact across TWO planted passages in DIFFERENT books, so the question is unanswerable from either alone. This is the aggregation case single-needle NIAH provably cannot test: a clean single-needle score says the system can LOCATE a fact, not that it can COMBINE two. Scored on retrievedBoth (both halves in top-k) and answeredBoth (final answer contains both facts).",
+  "multi": [
+    {
+      "id": "m1",
+      "a": {
+        "book": "pride_prejudice",
+        "text": "The living at Cranmere was in the gift of Sir Marcus Vane, who had never once visited the parish, though he was punctual in collecting what was due to him from it."
+      },
+      "b": {
+        "book": "little_women",
+        "text": "Sir Marcus Vane lost the greater part of his fortune at cards in the spring of 1809, and was afterwards obliged to sell the timber on his estates to meet his debts."
+      },
+      "question": "Who controlled the living at Cranmere, and what happened to his money?",
+      "keyA": "cranmere",
+      "keyB": "cards"
+    },
+    {
+      "id": "m2",
+      "a": {
+        "book": "little_women",
+        "text": "The blue jug on the dresser at Hollis Farm was never used for milk, but kept the household's letters, and had done so since the eldest boy went to sea."
+      },
+      "b": {
+        "book": "pride_prejudice",
+        "text": "The eldest boy of Hollis Farm went to sea in his fifteenth year, aboard a merchantman bound for Lisbon, and wrote home only twice in the first three years."
+      },
+      "question": "What was the blue jug at Hollis Farm used for, and how old was the boy whose departure began that custom?",
+      "keyA": "letters",
+      "keyB": "fifteen"
+    },
+    {
+      "id": "m3",
+      "a": {
+        "book": "pride_prejudice",
+        "text": "Miss Ferris taught music at Aldington for eleven years and would accept no payment from any family with more than four children."
+      },
+      "b": {
+        "book": "little_women",
+        "text": "Miss Ferris of Aldington had herself been the seventh of nine children, and said often that she remembered what it was to be one of many."
+      },
+      "question": "What was Miss Ferris's rule about payment, and what in her own upbringing explains it?",
+      "keyA": "four",
+      "keyB": "nine"
+    },
+    {
+      "id": "m4",
+      "a": {
+        "book": "little_women",
+        "text": "The clock in the hall at Denning stopped at twenty minutes past three, and the family would never have it mended, though they gave no reason to visitors."
+      },
+      "b": {
+        "book": "pride_prejudice",
+        "text": "It was at twenty minutes past three that the news came to Denning of the loss of the ship, and nothing in that house was afterwards altered."
+      },
+      "question": "Why was the stopped clock at Denning never repaired?",
+      "keyA": "three",
+      "keyB": "ship"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+
+# Built artefacts. Regenerable via `npm run ingest` / `npm run eval`.
+# data/index/ is committed on purpose: it is deterministic, and shipping it
+# means a fresh clone answers its first question with no embedding cost.
+data/eval/
+data/feedback/
+

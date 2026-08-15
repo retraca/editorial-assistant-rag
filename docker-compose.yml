@@ -1,0 +1,37 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file: .env
+    environment:
+      PROJECT_ROOT: /app
+    ports:
+      - "8080:8080"
+    volumes:
+      # The index is a build artefact, not part of the image. Mounting it keeps
+      # `npm run ingest` results across container rebuilds, so the embedding
+      # cost is paid once.
+      - ./data/index:/app/data/index
+    healthcheck:
+      # 127.0.0.1, not localhost: inside the container localhost resolves to ::1
+      # first, and the server binds 0.0.0.0 (IPv4 only), so the check gets
+      # "connection refused" against a perfectly healthy process.
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/api/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 12
+      # The index loads from disk at boot; don't count that as a failure.
+      start_period: 20s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      BACKEND_URL: http://backend:8080
+    ports:
+      - "5173:5173"
+    depends_on:
+      backend:
+        condition: service_healthy

@@ -1,0 +1,41 @@
+# The public demo, as one container.
+#
+# The local build runs two processes, an API and a Vite dev server, which is
+# right for reading the code and wrong for a link someone opens once. Here the
+# frontend is compiled to static files and served by the same Fastify process, so
+# there is one thing to deploy, one origin, and no CORS to reason about.
+#
+# The index ships inside the image rather than being built on boot. It is 6 MB
+# and deterministic; embedding it again on every deploy would cost money to
+# produce a file that already exists.
+
+FROM node:20-alpine AS frontend
+WORKDIR /app/frontend
+COPY frontend/package*.json ./
+RUN npm ci
+COPY frontend/ ./
+RUN npm run build
+
+FROM node:20-alpine
+WORKDIR /app/backend
+
+# better-sqlite3 is a native module and needs a toolchain to build. Removing it
+# afterwards keeps the runtime image close to the size it was without a database.
+RUN apk add --no-cache --virtual .build python3 make g++
+COPY backend/package*.json ./
+RUN npm ci && apk del .build
+
+COPY backend/tsconfig.json ./
+COPY backend/src ./src
+
+COPY data/books /app/data/books
+COPY data/summaries.json /app/data/summaries.json
+COPY data/index /app/data/index
+COPY --from=frontend /app/frontend/dist /app/frontend/dist
+
+ENV PROJECT_ROOT=/app
+ENV PORT=8080
+ENV NODE_ENV=production
+EXPOSE 8080
+
+CMD ["npx", "tsx", "src/server.ts"]

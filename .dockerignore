@@ -1,0 +1,9 @@
+# Never bake secrets into an image — .env is mounted via env_file at runtime.
+.env
+
+**/node_modules
+**/dist
+data/index
+data/eval
+*.log
+.git

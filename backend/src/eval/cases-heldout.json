@@ -1,0 +1,425 @@
+{
+  "generatedAt": "2026-07-28T18:45:12.900Z",
+  "cases": [
+    {
+      "id": "gen-0",
+      "query": "What kinds of presents did the sisters plan to secretly buy for their mother at Christmas?",
+      "goldChunkId": "little_women:0:7",
+      "goldBook": "little_women",
+      "goldChapter": 0
+    },
+    {
+      "id": "gen-1",
+      "query": "What accident onstage caused the actors playing the lovers to be buried under part of the set?",
+      "goldChunkId": "little_women:1:12",
+      "goldBook": "little_women",
+      "goldChapter": 1
+    },
+    {
+      "id": "gen-2",
+      "query": "Why was Meg in a bad mood when she came downstairs for breakfast?",
+      "goldChunkId": "little_women:3:1",
+      "goldBook": "little_women",
+      "goldChapter": 3
+    },
+    {
+      "id": "gen-3",
+      "query": "Why did Jo think the boy living in the grand neighboring house needed companionship?",
+      "goldChunkId": "little_women:4:1",
+      "goldBook": "little_women",
+      "goldChapter": 4
+    },
+    {
+      "id": "gen-4",
+      "query": "What treasured object did Beth finally gather the courage to play when the house was empty?",
+      "goldChunkId": "little_women:5:5",
+      "goldBook": "little_women",
+      "goldChapter": 5
+    },
+    {
+      "id": "gen-5",
+      "query": "Why did Jo refuse to let Amy go with the others to the outing?",
+      "goldChunkId": "little_women:7:2",
+      "goldBook": "little_women",
+      "goldChapter": 7
+    },
+    {
+      "id": "gen-6",
+      "query": "Why did Meg feel embarrassed about what she wore to the Moffats' gathering?",
+      "goldChunkId": "little_women:8:6",
+      "goldBook": "little_women",
+      "goldChapter": 8
+    },
+    {
+      "id": "gen-7",
+      "query": "What unusual crop did Jo decide to grow in her section of the garden?",
+      "goldChunkId": "little_women:9:0",
+      "goldBook": "little_women",
+      "goldChapter": 9
+    },
+    {
+      "id": "gen-8",
+      "query": "What did the sisters decide to do for Beth's dead bird?",
+      "goldChunkId": "little_women:10:9",
+      "goldBook": "little_women",
+      "goldChapter": 10
+    },
+    {
+      "id": "gen-9",
+      "query": "What were the rules of the storytelling game the group played after lunch?",
+      "goldChunkId": "little_women:11:13",
+      "goldBook": "little_women",
+      "goldChapter": 11
+    },
+    {
+      "id": "gen-10",
+      "query": "What kind of place does Beth say Jo dreams of living in someday?",
+      "goldChunkId": "little_women:12:5",
+      "goldBook": "little_women",
+      "goldChapter": 12
+    },
+    {
+      "id": "gen-11",
+      "query": "What imaginary change in Meg’s life does Jo describe to cheer her up?",
+      "goldChunkId": "little_women:14:0",
+      "goldBook": "little_women",
+      "goldChapter": 14
+    },
+    {
+      "id": "gen-12",
+      "query": "What did Jo do after deciding not to stay angry with Laurie overnight?",
+      "goldChunkId": "little_women:15:8",
+      "goldBook": "little_women",
+      "goldChapter": 15
+    },
+    {
+      "id": "gen-13",
+      "query": "What surprising action does Jo take when Laurie tells her he arranged for her mother to return home immediately?",
+      "goldChunkId": "little_women:17:7",
+      "goldBook": "little_women",
+      "goldChapter": 17
+    },
+    {
+      "id": "gen-14",
+      "query": "How does Amy respond when she learns she must wait patiently instead of rushing to see her mother?",
+      "goldChunkId": "little_women:19:1",
+      "goldBook": "little_women",
+      "goldChapter": 19
+    },
+    {
+      "id": "gen-15",
+      "query": "What reckless trip does Laurie suggest that he and Jo take together?",
+      "goldChunkId": "little_women:20:10",
+      "goldBook": "little_women",
+      "goldChapter": 20
+    },
+    {
+      "id": "gen-16",
+      "query": "How does Meg claim she would respond if Mr. Brooke proposed to her?",
+      "goldChunkId": "little_women:22:3",
+      "goldBook": "little_women",
+      "goldChapter": 22
+    },
+    {
+      "id": "gen-17",
+      "query": "What homemade household items does Beth prepare in large quantities for Meg’s new home?",
+      "goldChunkId": "little_women:23:7",
+      "goldBook": "little_women",
+      "goldChapter": 23
+    },
+    {
+      "id": "gen-18",
+      "query": "What promise does Meg make to her family as she leaves after her wedding?",
+      "goldChunkId": "little_women:24:10",
+      "goldBook": "little_women",
+      "goldChapter": 24
+    },
+    {
+      "id": "gen-19",
+      "query": "What kind of writing contest inspires Jo to begin creating a dramatic new story?",
+      "goldChunkId": "little_women:26:4",
+      "goldBook": "little_women",
+      "goldChapter": 26
+    },
+    {
+      "id": "gen-20",
+      "query": "What action finally reconciled Meg and her husband after their first major argument?",
+      "goldChunkId": "little_women:27:12",
+      "goldBook": "little_women",
+      "goldChapter": 27
+    },
+    {
+      "id": "gen-21",
+      "query": "How did Amy alter her old shoes so she could wear them to a party?",
+      "goldChunkId": "little_women:28:9",
+      "goldBook": "little_women",
+      "goldChapter": 28
+    },
+    {
+      "id": "gen-22",
+      "query": "Who helped make Amy's event successful by buying many of the flower arrangements?",
+      "goldChunkId": "little_women:29:10",
+      "goldBook": "little_women",
+      "goldChapter": 29
+    },
+    {
+      "id": "gen-23",
+      "query": "What did Amy and Flo toss down from their window after the students finished singing beneath it?",
+      "goldChunkId": "little_women:30:13",
+      "goldBook": "little_women",
+      "goldChapter": 30
+    },
+    {
+      "id": "gen-24",
+      "query": "Why did Jo think it would be better to leave before her friend's feelings for her became more serious?",
+      "goldChunkId": "little_women:31:16",
+      "goldBook": "little_women",
+      "goldChapter": 31
+    },
+    {
+      "id": "gen-25",
+      "query": "What book did the professor switch to after abandoning the difficult grammar lesson?",
+      "goldChunkId": "little_women:32:18",
+      "goldBook": "little_women",
+      "goldChapter": 32
+    },
+    {
+      "id": "gen-26",
+      "query": "Why did Jo laugh at the professor during their lesson?",
+      "goldChunkId": "little_women:33:16",
+      "goldBook": "little_women",
+      "goldChapter": 33
+    },
+    {
+      "id": "gen-27",
+      "query": "What trip did Mr. Laurence propose in order to keep Laurie from traveling by himself?",
+      "goldChunkId": "little_women:34:12",
+      "goldBook": "little_women",
+      "goldChapter": 34
+    },
+    {
+      "id": "gen-28",
+      "query": "What distant island did Amy point out from the hilltop viewpoint?",
+      "goldChunkId": "little_women:36:7",
+      "goldBook": "little_women",
+      "goldChapter": 36
+    },
+    {
+      "id": "gen-29",
+      "query": "According to the advice Meg received, what can help keep a father happy and connected to his family during the early years of marriage?",
+      "goldChunkId": "little_women:37:9",
+      "goldBook": "little_women",
+      "goldChapter": 37
+    },
+    {
+      "id": "gen-30",
+      "query": "What reasons does Amy give for considering Fred a suitable husband?",
+      "goldChunkId": "little_women:38:9",
+      "goldBook": "little_women",
+      "goldChapter": 38
+    },
+    {
+      "id": "gen-31",
+      "query": "What words does Laurie repeat to himself to strengthen his resolve after leaving Nice?",
+      "goldChunkId": "little_women:40:0",
+      "goldBook": "little_women",
+      "goldChapter": 40
+    },
+    {
+      "id": "gen-32",
+      "query": "Why does Jo struggle to keep her promise to comfort her parents and stay cheerful after her sister's death?",
+      "goldChunkId": "little_women:41:0",
+      "goldBook": "little_women",
+      "goldChapter": 41
+    },
+    {
+      "id": "gen-33",
+      "query": "What realization does Laurie describe having when he reunited with Amy in Switzerland?",
+      "goldChunkId": "little_women:42:8",
+      "goldBook": "little_women",
+      "goldChapter": 42
+    },
+    {
+      "id": "gen-34",
+      "query": "What physical feature of Laurie does Amy teasingly say reassures her?",
+      "goldChunkId": "little_women:43:3",
+      "goldBook": "little_women",
+      "goldChapter": 43
+    },
+    {
+      "id": "gen-35",
+      "query": "What mistakes does Jo make while shopping with Mr. Bhaer?",
+      "goldChunkId": "little_women:45:8",
+      "goldBook": "little_women",
+      "goldChapter": 45
+    },
+    {
+      "id": "gen-36",
+      "query": "What nickname does Laurie propose for the school filled with boys at Plumfield?",
+      "goldChunkId": "little_women:46:7",
+      "goldBook": "little_women",
+      "goldChapter": 46
+    },
+    {
+      "id": "gen-37",
+      "query": "Which pen names of Louisa May Alcott are noted as missing from the list of her works?",
+      "goldChunkId": "little_women:48:7",
+      "goldBook": "little_women",
+      "goldChapter": 48
+    },
+    {
+      "id": "gen-38",
+      "query": "Why does Mrs. Bennet say she cannot introduce Mr. Bingley to Mrs. Long?",
+      "goldChunkId": "pride_prejudice:2:1",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 2
+    },
+    {
+      "id": "gen-39",
+      "query": "According to Charlotte, why is it better not to know too much about the person one marries?",
+      "goldChunkId": "pride_prejudice:6:3",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 6
+    },
+    {
+      "id": "gen-40",
+      "query": "Whom did Elizabeth agree should be called to examine her sick sister if she did not improve by morning?",
+      "goldChunkId": "pride_prejudice:8:6",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 8
+    },
+    {
+      "id": "gen-41",
+      "query": "What personal flaw does Darcy admit makes him slow to forgive injuries from others?",
+      "goldChunkId": "pride_prejudice:11:5",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 11
+    },
+    {
+      "id": "gen-42",
+      "query": "How did Mrs. Philips first learn that the Bennet sisters had returned home from Netherfield?",
+      "goldChunkId": "pride_prejudice:15:5",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 15
+    },
+    {
+      "id": "gen-43",
+      "query": "What event helped Kitty and Lydia endure several days of rain that kept them from visiting Meryton?",
+      "goldChunkId": "pride_prejudice:17:5",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 17
+    },
+    {
+      "id": "gen-44",
+      "query": "What future did Mrs. Bennet confidently imagine for Jane after leaving Netherfield?",
+      "goldChunkId": "pride_prejudice:18:21",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 18
+    },
+    {
+      "id": "gen-45",
+      "query": "Why does Elizabeth think Caroline Bingley wants her brother to marry Miss Darcy instead of Jane?",
+      "goldChunkId": "pride_prejudice:21:6",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 21
+    },
+    {
+      "id": "gen-46",
+      "query": "How does Elizabeth describe Mr. Collins while arguing with Jane about Charlotte's engagement?",
+      "goldChunkId": "pride_prejudice:24:4",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 24
+    },
+    {
+      "id": "gen-47",
+      "query": "What part of Elizabeth’s upcoming trip pleased her because it would allow her to see Jane?",
+      "goldChunkId": "pride_prejudice:27:0",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 27
+    },
+    {
+      "id": "gen-48",
+      "query": "What kinds of household matters did Lady Catherine criticize when visiting the Parsonage?",
+      "goldChunkId": "pride_prejudice:30:1",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 30
+    },
+    {
+      "id": "gen-49",
+      "query": "What did Colonel Fitzwilliam say Darcy believed he had saved a friend from?",
+      "goldChunkId": "pride_prejudice:33:4",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 33
+    },
+    {
+      "id": "gen-50",
+      "query": "Whose testimony does Darcy suggest could confirm the truth of what he wrote about Wickham?",
+      "goldChunkId": "pride_prejudice:35:9",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 35
+    },
+    {
+      "id": "gen-51",
+      "query": "What did Lydia say she hoped one of her sisters would have accomplished before returning home?",
+      "goldChunkId": "pride_prejudice:39:3",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 39
+    },
+    {
+      "id": "gen-52",
+      "query": "What two environments does Elizabeth think will encourage her younger sister’s reckless behavior?",
+      "goldChunkId": "pride_prejudice:42:1",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 42
+    },
+    {
+      "id": "gen-53",
+      "query": "What pastime did Darcy invite Mr. Gardiner to enjoy on the estate whenever he liked?",
+      "goldChunkId": "pride_prejudice:43:15",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 43
+    },
+    {
+      "id": "gen-54",
+      "query": "Which of Bingley’s acquaintances was Darcy especially eager to keep Georgiana’s history from?",
+      "goldChunkId": "pride_prejudice:45:5",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 45
+    },
+    {
+      "id": "gen-55",
+      "query": "How did Elizabeth describe the level of attention Wickham had previously shown Lydia?",
+      "goldChunkId": "pride_prejudice:47:5",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 47
+    },
+    {
+      "id": "gen-56",
+      "query": "What reason did Elizabeth think made Lydia’s scandal even harder for her to bear emotionally?",
+      "goldChunkId": "pride_prejudice:48:8",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 48
+    },
+    {
+      "id": "gen-57",
+      "query": "How did Lydia make sure William Goulding noticed that she was married?",
+      "goldChunkId": "pride_prejudice:51:2",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 51
+    },
+    {
+      "id": "gen-58",
+      "query": "Who arrived at Longbourn together on horseback after Bingley returned to Hertfordshire?",
+      "goldChunkId": "pride_prejudice:53:5",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 53
+    },
+    {
+      "id": "gen-59",
+      "query": "What privilege did Mary ask for after Jane became engaged?",
+      "goldChunkId": "pride_prejudice:55:7",
+      "goldBook": "pride_prejudice",
+      "goldChapter": 55
+    }
+  ]
+}

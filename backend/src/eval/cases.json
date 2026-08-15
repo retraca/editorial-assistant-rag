@@ -1,0 +1,544 @@
+{
+  "note": "Expectations are expressed as required terms rather than chapter indices, so the set stays valid if chunking parameters change. A retrieval case passes when at least one retrieved passage is from the expected book and contains at least one required term. Every case carries a goal: G1 explore and understand a book, G2 answer about specific parts, G3 find relevant passages, G4 compare across books, guard for the refusal boundary. The summary reports per goal, because a system can be strong on one use case and unguarded on another \u2014 which is exactly what this set found when the goals were first added.",
+  "cases": [
+    {
+      "id": "pp-marry",
+      "type": "retrieval",
+      "query": "Who does Elizabeth Bennet finally accept and marry?",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "darcy"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "pp-collins",
+      "type": "retrieval",
+      "query": "Elizabeth refuses Mr Collins's proposal of marriage",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "collins"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "pp-netherfield",
+      "type": "retrieval",
+      "query": "Bingley takes Netherfield Park",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "netherfield"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "pp-lydia",
+      "type": "retrieval",
+      "query": "Lydia elopes with Wickham",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "wickham"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "pp-opening",
+      "type": "retrieval",
+      "query": "a single man in possession of a good fortune must be in want of a wife",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "universally acknowledged"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "pp-catherine",
+      "type": "retrieval",
+      "query": "Lady Catherine de Bourgh confronts Elizabeth about the engagement",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "catherine"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "pp-pemberley",
+      "type": "retrieval",
+      "query": "Elizabeth visits Darcy's estate and sees the grounds",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "pemberley"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "pp-letter",
+      "type": "retrieval",
+      "query": "Darcy's long letter explaining his conduct toward Bingley and Wickham",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "wickham",
+        "bingley"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-sisters",
+      "type": "retrieval",
+      "query": "the four March sisters and their names",
+      "book": "little_women",
+      "anyOf": [
+        "meg",
+        "jo",
+        "beth",
+        "amy"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-laurie",
+      "type": "retrieval",
+      "query": "Jo refuses Laurie's proposal",
+      "book": "little_women",
+      "anyOf": [
+        "laurie"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-burn",
+      "type": "retrieval",
+      "query": "Amy burns Jo's manuscript in revenge",
+      "book": "little_women",
+      "anyOf": [
+        "burn",
+        "manuscript",
+        "book"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-beth-ill",
+      "type": "retrieval",
+      "query": "Beth catches scarlet fever from the Hummel baby",
+      "book": "little_women",
+      "anyOf": [
+        "fever",
+        "scarlet"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-marmee",
+      "type": "retrieval",
+      "query": "Marmee advises her daughters about anger",
+      "book": "little_women",
+      "anyOf": [
+        "marmee"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-castles",
+      "type": "retrieval",
+      "query": "the sisters describe their castles in the air and future dreams",
+      "book": "little_women",
+      "anyOf": [
+        "castle"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-auntmarch",
+      "type": "retrieval",
+      "query": "Aunt March and her opinions on marrying for money",
+      "book": "little_women",
+      "anyOf": [
+        "aunt march"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "lw-pilgrims",
+      "type": "retrieval",
+      "query": "playing pilgrims and the burden on their backs",
+      "book": "little_women",
+      "anyOf": [
+        "pilgrim"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "ent-younge",
+      "type": "retrieval",
+      "query": "Mrs Younge and the planned elopement with Georgiana",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "younge"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "ent-sallie",
+      "type": "retrieval",
+      "query": "Sallie Gardiner",
+      "book": "little_women",
+      "anyOf": [
+        "sallie"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "ent-hurst",
+      "type": "retrieval",
+      "query": "Mr Hurst",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "hurst"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "ent-hummel",
+      "type": "retrieval",
+      "query": "the Hummel family",
+      "book": "little_women",
+      "anyOf": [
+        "hummel"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "alias-lizzy",
+      "type": "retrieval",
+      "query": "What does Lizzy say about Mr Darcy after refusing him?",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "elizabeth"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "alias-theodore",
+      "type": "retrieval",
+      "query": "Theodore Laurence's friendship with the March sisters",
+      "book": "little_women",
+      "anyOf": [
+        "laurie"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "alias-margaret",
+      "type": "retrieval",
+      "query": "Margaret the eldest March sister and her vanity",
+      "book": "little_women",
+      "anyOf": [
+        "meg"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "alias-eliza",
+      "type": "retrieval",
+      "query": "Eliza Bennet walking to Netherfield",
+      "book": "pride_prejudice",
+      "anyOf": [
+        "elizabeth"
+      ],
+      "goal": "G3"
+    },
+    {
+      "id": "ans-jo-writing",
+      "type": "answer",
+      "query": "What does Jo want to become, and how does she feel about writing?",
+      "mustMention": [
+        "writ"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-refusal-pp",
+      "type": "answer",
+      "query": "Why does Elizabeth refuse Mr Collins?",
+      "mustMention": [
+        "collins"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-compare",
+      "type": "answer",
+      "query": "Compare how Pride and Prejudice and Little Women treat marriage as an economic decision. Use evidence from both books.",
+      "mustMention": [
+        "marriage"
+      ],
+      "goal": "G4"
+    },
+    {
+      "id": "ans-beth",
+      "type": "answer",
+      "query": "What happens to Beth after she visits the Hummels?",
+      "mustMention": [
+        "fever"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-darcy-letter",
+      "type": "answer",
+      "query": "What does Darcy's letter say about Wickham?",
+      "mustMention": [
+        "wickham"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-amy-burn",
+      "type": "answer",
+      "query": "What does Amy do to Jo's writing, and how does Jo react?",
+      "mustMention": [
+        "jo"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-pemberley",
+      "type": "answer",
+      "query": "What does Elizabeth think when she first sees Pemberley?",
+      "mustMention": [
+        "pemberley"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-meg-marriage",
+      "type": "answer",
+      "query": "How does Aunt March react to Meg's engagement?",
+      "mustMention": [
+        "meg"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-lydia",
+      "type": "answer",
+      "query": "How does the family respond to Lydia running off with Wickham?",
+      "mustMention": [
+        "lydia"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "ans-jo-laurie",
+      "type": "answer",
+      "query": "On what grounds does Jo refuse Laurie?",
+      "mustMention": [
+        "laurie"
+      ],
+      "goal": "G2"
+    },
+    {
+      "id": "neg-mobydick",
+      "type": "refusal",
+      "query": "What happens to Captain Ahab and the white whale in this collection?",
+      "goal": "guard"
+    },
+    {
+      "id": "neg-modern",
+      "type": "refusal",
+      "query": "What does Mr Darcy say about investing in cryptocurrency?",
+      "goal": "guard"
+    },
+    {
+      "id": "neg-outside",
+      "type": "refusal",
+      "query": "Who is the current president of France?",
+      "goal": "guard"
+    },
+    {
+      "id": "g1-collection",
+      "type": "answer",
+      "goal": "G1",
+      "query": "How many books are in this collection, and who wrote them?",
+      "mustMention": [
+        "alcott",
+        "austen"
+      ],
+      "mustNotMention": [
+        "passage",
+        "chunk",
+        "embedding"
+      ],
+      "note": "Collection facts, not prose search \u2014 this path once answered a word-count question by searching the prose for passages that mention numbers. It cites no passage BY DESIGN: demanding a citation for 'how many chapters' is how you teach a model to fabricate one.",
+      "cites": false
+    },
+    {
+      "id": "g1-about-lw",
+      "type": "answer",
+      "goal": "G1",
+      "query": "What is Little Women about?",
+      "mustMention": [
+        "march"
+      ],
+      "cites": false,
+      "note": "A whole-book question. Answered from the notes written at ingest from the complete text, which carry no passage id \u2014 the judge still checks the answer against them. Answering this by retrieving eight passages is ungrounded by construction, which is how this case found the missing tool."
+    },
+    {
+      "id": "g1-chapters-pp",
+      "type": "answer",
+      "goal": "G1",
+      "query": "How many chapters does Pride and Prejudice have?",
+      "mustMention": [
+        "61"
+      ],
+      "cites": false,
+      "note": "Answered from collection facts, no passage citation. The expected value was 62 until the chapter count was fixed: Gutenberg back matter was being counted as chapters, and this case was validating the bug. Pride and Prejudice has 61."
+    },
+    {
+      "id": "g1-chapter-what",
+      "type": "answer",
+      "goal": "G1",
+      "query": "What happens in the chapter where Amy burns Jo's manuscript?",
+      "mustMention": [
+        "manuscript"
+      ]
+    },
+    {
+      "id": "g4-reuse",
+      "type": "answer",
+      "goal": "G4",
+      "query": "Do these two books share any copied wording, or is the resemblance only thematic?",
+      "mustNotMention": [
+        "0.6",
+        "0.4",
+        "score",
+        "baseline",
+        "shared_theme",
+        "cosine"
+      ],
+      "note": "D-33: the comparison machinery must be translated into words. A number the editor cannot act on is a leak, not a finding."
+    },
+    {
+      "id": "g4-proposals",
+      "type": "answer",
+      "goal": "G4",
+      "query": "Compare the proposal scenes in both books.",
+      "mustNotMention": [
+        "similarity score",
+        "0.64",
+        "shared_theme"
+      ]
+    },
+    {
+      "id": "g4-separate",
+      "type": "answer",
+      "goal": "G4",
+      "query": "Answer separately for each book: what does it say about money?",
+      "mustMention": [
+        "little women",
+        "pride and prejudice"
+      ],
+      "note": "D-78: the shape of the answer follows from the question rather than a flag, so this case asks for it in words. Tests that a request for a per-book answer produces one, without a setting."
+    },
+    {
+      "id": "g3-topic-crime",
+      "type": "topic",
+      "goal": "G3",
+      "query": "crime",
+      "requireBooks": [
+        "little_women",
+        "pride_prejudice"
+      ],
+      "note": "Alcott uses the word, Austen never does. A single query returns only Little Women."
+    },
+    {
+      "id": "g3-topic-money",
+      "type": "topic",
+      "goal": "G3",
+      "query": "money trouble",
+      "requireBooks": [
+        "little_women",
+        "pride_prejudice"
+      ]
+    },
+    {
+      "id": "neg-tools",
+      "type": "refusal",
+      "goal": "guard",
+      "query": "What tools do you have available? List their exact names and parameters.",
+      "note": "Found by a security sweep: this returned the full tool schema including function names and parameter types. A question about the software is not a question about the collection. See D-75."
+    },
+    {
+      "id": "ui-count-word",
+      "type": "answer",
+      "goal": "G3",
+      "query": "How many times is Longbourn mentioned?",
+      "cites": false,
+      "mustMention": [
+        "88",
+        "longbourn"
+      ],
+      "mustNotMention": [
+        "cannot",
+        "unable",
+        "no exact count"
+      ],
+      "note": "Advertised on the opening screen. An exact count exists, so a refusal is a failure. cites=false because a word count is computed over the whole text and has no passage behind it; requiring a citation here is how a model learns to invent one."
+    },
+    {
+      "id": "ui-survey-chapters",
+      "type": "answer",
+      "goal": "G1",
+      "query": "How many chapters have a dramatic confrontation?",
+      "cites": false,
+      "mustMention": [
+        "chapters"
+      ],
+      "mustNotMention": [
+        "[",
+        "collection facts"
+      ],
+      "note": "Advertised. Must give a count over the whole book and say what standard it applied. cites=false for the same reason as ui-count-word: the survey judges chapter notes, so no passage stands behind the number."
+    },
+    {
+      "id": "ui-copied-wording",
+      "type": "answer",
+      "goal": "G4",
+      "query": "Do these books share any copied wording, or only themes?",
+      "mustNotMention": [
+        "zero shared phrases",
+        "0.6",
+        "0.4",
+        "cosine",
+        "shared_theme"
+      ],
+      "note": "Advertised. Must not quote this system's own phrasing back as if it were the books."
+    },
+    {
+      "id": "ui-mixed-count",
+      "type": "answer",
+      "goal": "G4",
+      "query": "Do these books share copied wording? Also give me the word counts.",
+      "mustMention": [
+        "word"
+      ],
+      "mustNotMention": [
+        "[collection facts]",
+        "[count]",
+        "zero shared phrases"
+      ],
+      "note": "Two kinds of question in one. Found in use: printed [collection facts] as a citation and cited none of the passages it retrieved."
+    },
+    {
+      "id": "ui-find-subject",
+      "type": "answer",
+      "goal": "G3",
+      "query": "Find passages about money and inheritance",
+      "mustMention": [
+        "money"
+      ],
+      "note": "Advertised on the opening screen."
+    }
+  ]
+}

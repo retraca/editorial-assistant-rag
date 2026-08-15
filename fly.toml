@@ -1,0 +1,54 @@
+# The hosted demo.
+#
+# One machine, one process, the index held in memory exactly as it is locally.
+# The volume exists for the SQLite file and nothing else: the index ships inside
+# the image because it is deterministic and rebuilding it on boot would pay to
+# recreate a file that already exists.
+#
+# auto_stop_machines is on. This is a link handed to a few people, so it should
+# sleep between them rather than bill for an idle container. The cost is a cold
+# start on the first question after a quiet period, which is the right trade for
+# a demo and the wrong one for a service.
+
+app = "editorial-assistant"
+primary_region = "cdg"
+
+[build]
+  dockerfile = "Dockerfile.demo"
+
+[env]
+  PORT = "8080"
+  PROJECT_ROOT = "/app"
+  LLM_PROVIDER = "openai"
+  DEMO_DB_PATH = "/data/demo.sqlite"
+  DEMO_QUESTIONS_PER_HOUR = "40"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 8
+    hard_limit = 16
+
+[[mounts]]
+  source = "editorial_data"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  # 1,330 chunks x 1,024 dims is ~5 MB of vectors, plus the BM25 index and the
+  # chapter text. 512 MB was not enough headroom for the Node heap during boot.
+  memory = "1gb"
+
+[checks.health]
+  type = "http"
+  port = 8080
+  path = "/api/health"
+  interval = "30s"
+  timeout = "5s"
+  grace_period = "30s"
