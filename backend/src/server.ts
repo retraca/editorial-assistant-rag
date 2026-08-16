@@ -188,7 +188,7 @@ app.post('/api/chat', async (req, reply) => {
     const filtered = /content management policy|content_filter/i.test(message);
     return reply.code(rateLimited ? 429 : 502).send({
       error: rateLimited
-        ? 'The model provider is rate limiting this sandbox. Wait a moment and try again.'
+        ? 'The model provider is rate limiting this app. Wait a moment and try again.'
         : filtered
           ? 'That request was refused by the model provider\u2019s safety filter. Try rephrasing it.'
           : 'The model call failed. The details are in the server log.',
@@ -233,7 +233,7 @@ app.post('/api/chat/stream', async (req, reply) => {
     send({
       type: 'error',
       error: /\b429\b|rate limit/i.test(message)
-        ? 'The model provider is rate limiting this sandbox. Wait a moment and try again.'
+        ? 'The model provider is rate limiting this app. Wait a moment and try again.'
         : `Upstream model call failed: ${message.slice(0, 300)}`,
     });
   }

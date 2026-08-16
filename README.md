@@ -362,8 +362,8 @@ better ranking selects a better eight. Costs ~$0.0065 and ~4.8s per query. `RERA
 chapter titles before embedding *lowered* dense strict recall from 83.3% to 71.7%. A constant
 per-chapter prefix makes chunks within a chapter more alike, which is the opposite of what retrieval
 needs. Anthropic's version works because its prefix is chunk-specific and therefore discriminating, 
-metadata is not context. The full technique needs one LLM call per chunk (1,330 here), which this
-sandbox's rate limit makes impractical. See D-21.
+metadata is not context. The full technique needs one LLM call per chunk (1,330 here), which the
+deployment's rate limit makes impractical. See D-21.
 
 **Multi-hop retrieval.** Rare proper nouns appearing in results but not in the query are followed up
 automatically (one embedding call each, no LLM). This fixes the only failure any test here has found:
@@ -412,7 +412,7 @@ each book"), so it pays the rerank tax twice, roughly $0.013 and ~8s of the tota
 the honest price of the +8.3pp recall in D-20, and it is why `RERANK=false` is a supported
 configuration rather than a hidden flag.
 
-Cost figures use **assumed** token rates. The sandbox publishes no pricing for this deployment. They
+Cost figures use **assumed** token rates. There is no published price for this deployment. They
 are configurable and are meant to make cost visible and relative, not billing-accurate.
 
 ---
@@ -494,8 +494,8 @@ until the last QA pass (D-84). It is named here because nothing in the system wa
 notice it: every check validates the path from evidence to answer, and this was upstream of all of
 them.
 
-**About cost.** The USD figures in the traces and this README are **estimates**. The sandbox does not
-publish rates for this deployment, so the prices in `.env.example` are assumed, and the numbers are
+**About cost.** The USD figures in the traces and this README are **estimates**. There are no
+published rates for this deployment, so the prices in `.env.example` are assumed, and the numbers are
 built to make cost visible and relative rather than billing-accurate (D-11).
 
 **About the evaluation.** The generated eval set was written by a model from the same family as the

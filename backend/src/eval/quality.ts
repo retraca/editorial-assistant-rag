@@ -72,7 +72,7 @@ const num = (v: number[]) => {
   return `${mean(v).toFixed(4)} [${lo.toFixed(4)}-${hi.toFixed(4)}]`;
 };
 
-/** Small worker pool. The sandbox 429s under load, so this is deliberately low. */
+/** Small worker pool. The deployment 429s under load, so this is deliberately low. */
 async function pool<T, R>(items: T[], width: number, fn: (item: T, i: number) => Promise<R>) {
   const out: R[] = new Array(items.length);
   let next = 0;

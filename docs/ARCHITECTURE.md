@@ -161,8 +161,8 @@ Every request produces a trace: per-stage timings, token counts split by cached 
 estimated cost. It is logged as one JSON line and shown in the interface, so an editor can see that
 an answer took two searches and cost $0.02.
 
-The prices are **assumptions**, and are labelled as such wherever they appear. The sandbox does not
-publish rates for this deployment, so the figures make cost visible and relative rather than
+The prices are **assumptions**, and are labelled as such wherever they appear. There are no published
+rates for this deployment, so the figures make cost visible and relative rather than
 billing-accurate (D-11).
 
 Typical costs, measured:

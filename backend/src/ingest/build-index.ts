@@ -14,7 +14,7 @@ import { chunkSections, type Chunk } from './chunk.js';
  * See DECISIONS.md D-05 for why this is not a vector database.
  */
 
-// 64 x ~400 words is roughly 34k tokens per request. The sandbox is an S0 tier
+// 64 x ~400 words is roughly 34k tokens per request. This runs against an S0 tier
 // deployment with a per-minute token budget, so batches are paced rather than
 // fired back-to-back; without this the run trips a 429 around batch 6.
 const BATCH = 64;
@@ -27,7 +27,7 @@ const DRY_RUN = process.argv.includes('--dry-run');
  * Anthropic's contextual retrieval generates a per-chunk summary of how the
  * chunk relates to its document, then prepends it before embedding, reported
  * to cut top-20 retrieval failures 35% alone, 49% with BM25. It costs one LLM
- * call per chunk: 1,359 calls here, which the sandbox's rate limit makes
+ * call per chunk: 1,359 calls here, which the deployment's rate limit makes
  * impractical (see D-20).
  *
  * This is the free approximation: prepend the book and chapter title, which we

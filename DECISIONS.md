@@ -404,7 +404,7 @@ across services, which a per-process ring buffer cannot give.
 
 ## D-11: Cost figures are estimates, and labelled as such
 
-**Assumption, not a decision.** The sandbox publishes no pricing for `gpt-5.1-chat`. The rates in
+**Assumption, not a decision.** There is no published price for `gpt-5.1-chat`. The rates in
 `.env.example` (`$1.25/M` input, `$10.00/M` output, `$0.13/M` embeddings) are **assumptions**.
 
 The embedding rate is the published `text-embedding-3-large` price and is reliable. The chat rates
@@ -764,7 +764,7 @@ relates to its document before embedding, reported to cut top-20 retrieval failu
 49% combined with BM25.
 
 **The full technique was not implementable here.** It needs one LLM call per chunk: 1,330 calls
-against an S0-tier sandbox that already 429s twice during a plain embedding pass. At observed
+against an S0-tier Azure deployment that already 429s twice during a plain embedding pass. At observed
 latency that is roughly 45-70 minutes and several dollars.
 
 **So the free approximation was tested instead** (`CONTEXT_PREFIX=true`): prepend the book and chapter

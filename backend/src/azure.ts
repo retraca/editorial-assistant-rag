@@ -8,7 +8,7 @@ import type { Trace } from './trace.js';
  * wire format is stable. See DECISIONS.md D-09.
  *
  * Note `max_completion_tokens`: this deployment rejects the older `max_tokens`
- * parameter outright with a 400. Verified against the live sandbox.
+ * parameter outright with a 400. Verified against the live API.
  */
 
 export interface ChatMessage {
@@ -49,7 +49,7 @@ interface AzureError extends Error {
 
 /**
  * Retry with exponential backoff, but honour `Retry-After` when the server
- * sends it. The sandbox is an S0 tier deployment whose 429 says "retry after
+ * sends it. This runs against an S0 tier deployment whose 429 says "retry after
  * 45 seconds"; a blind 400ms*2^n schedule tops out around 6s and burns every
  * attempt inside the window the server already told us to wait out.
  */
